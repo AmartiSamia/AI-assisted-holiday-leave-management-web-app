@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI‑powered Holiday & Leave Management</title>
+  <meta name="description" content="An AI‑assisted holiday and leave management platform for employees, managers, and HR." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">AI‑powered Holiday & Leave Management</h1>
+      <nav class="nav">
+        <a href="#overview">Overview</a>
+        <a href="#features">Features</a>
+        <a href="#flows">User Flows</a>
+        <a href="#tech">Tech</a>
+        <a href="#screens">Screens</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Overview -->
+    <section id="overview" class="section">
+      <div class="container">
+        <article class="project-card">
+          <h2>Project Overview</h2>
+          <p class="lead">
+            A web application that automates employee time‑off with an AI assistant that understands
+            policies, detects conflicts, and suggests the best dates based on team capacity, public holidays,
+            and project deadlines.
+          </p>
+
+          <div class="stats-grid">
+            <div class="stat card">
+              <div class="stat__value">3</div>
+              <div class="stat__label">User Roles</div>
+              <p class="muted">Employee • Manager • HR</p>
+            </div>
+            <div class="stat card">
+              <div class="stat__value">4</div>
+              <div class="stat__label">Core Modules</div>
+              <p class="muted">Requests • Policies • Calendars • Analytics</p>
+            </div>
+          </div>
+
+          <div class="pill-bar">
+            <span class="chip">AI Assistant</span>
+            <span class="chip">Policy Engine</span>
+            <span class="chip">Calendar Sync</span>
+            <span class="chip">Approvals</span>
+            <span class="chip">Analytics</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="section alt">
+      <div class="container">
+        <h2>Key Features</h2>
+        <ul class="feature-list">
+          <li><strong>Smart requests:</strong> natural‑language requests (e.g., “I need 3 days off next week”), with policy‑aware suggestions and remaining balance checks.</li>
+          <li><strong>Conflict detection:</strong> warns about overlapping absences, critical deadlines, or WIP limits on your team.</li>
+          <li><strong>Multi‑policy engine:</strong> supports annual leave, sick leave, parental leave, compensatory time, and custom accrual rules.</li>
+          <li><strong>Approvals & workflows:</strong> single or multi‑step approval rules, delegation, and escalation paths.</li>
+          <li><strong>Calendar integration:</strong> two‑way sync with Google Calendar / Outlook; imports country public holidays automatically.</li>
+          <li><strong>Team capacity views:</strong> heatmaps and weekly availability to help managers plan coverage.</li>
+          <li><strong>Analytics:</strong> usage trends, burnout risk indicators, fairness metrics, and forecasted capacity gaps.</li>
+          <li><strong>Notifications:</strong> email/Slack/Teams alerts for requests, approvals, changes, and upcoming returns.</li>
+          <li><strong>Security & compliance:</strong> SSO/OAuth2, RBAC, audit logs, data retention controls.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- User flows -->
+    <section id="flows" class="section">
+      <div class="container">
+        <h2>User Flows</h2>
+        <div class="flows-grid">
+          <div class="flow card">
+            <h3>Employee</h3>
+            <ol>
+              <li>Open assistant and type “Need 2 days off next month.”</li>
+              <li>AI suggests optimal dates and shows balance & policy warnings.</li>
+              <li>Submit request; calendar preview appears; notifications sent.</li>
+            </ol>
+          </div>
+          <div class="flow card">
+            <h3>Manager</h3>
+            <ol>
+              <li>Review requests with capacity/conflict indicators.</li>
+              <li>Approve, request changes, or delegate.</li>
+              <li>Team calendar and coverage heatmap update in real‑time.</li>
+            </ol>
+          </div>
+          <div class="flow card">
+            <h3>HR</h3>
+            <ol>
+              <li>Define policies, accrual rates, carry‑over, and blackout periods.</li>
+              <li>Run monthly accruals and exports for payroll.</li>
+              <li>Audit logs & analytics dashboards for compliance.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech -->
+    <section id="tech" class="section">
+      <div class="container">
+        <h2>Tech Stack</h2>
+        <div class="stack">
+          <div class="chip">React + TypeScript</div>
+          <div class="chip">Spring Boot</div>
+          <div class="chip">PostgreSQL</div>
+          <div class="chip">JWT / OAuth2</div>
+          <div class="chip">Docker</div>
+          <div class="chip">GitLab CI/CD → Jenkins</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Screens -->
+    <section id="screens" class="section alt">
+      <div class="container">
+        <h2>Screenshots</h2>
+        <div class="screens">
+          <div class="screen-placeholder">Attach your screenshots here</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Holiday & Leave Management Project</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+/* Neutral, modern styles for the AI Leave project (no product name) */
+:root{
+  --bg:#0b1020;
+  --panel:#0f1530;
+  --panel2:#18254d;
+  --text:#e8ecff;
+  --muted:#a6b0d0;
+  --primary:#6e8bff;
+  --accent:#22d3ee;
+  --success:#22c55e;
+  --shadow:0 10px 30px rgba(2,6,23,.35);
+  --radius:16px;
+}
+*{box-sizing:border-box;}
+body{
+  margin:0;
+  font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,"Noto Sans","Helvetica Neue",sans-serif;
+  color:var(--text);
+  background:
+    radial-gradient(1200px 600px at -10% -10%, rgba(110,139,255,.15), transparent 60%),
+    radial-gradient(900px 500px at 110% 0%, rgba(34,211,238,.12), transparent 60%),
+    var(--bg);
+  line-height:1.6;
+}
+.container{max-width:1080px;margin:0 auto;padding:0 16px;}
+.site-header{
+  position:sticky;top:0;z-index:10;
+  backdrop-filter:blur(10px);
+  background:linear-gradient(180deg, rgba(11,16,32,.85), rgba(11,16,32,.7));
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+.site-header .container{display:flex;align-items:center;justify-content:space-between;padding:14px 0;}
+.brand{font-weight:800;letter-spacing:.3px;margin:0;font-size:20px;}
+.nav a{color:var(--text);opacity:.85;text-decoration:none;margin:0 10px;font-weight:600;}
+.nav a:hover{opacity:1;}
+.section{padding:48px 0;}
+.section.alt{background:linear-gradient(180deg, transparent, rgba(255,255,255,.03));}
+h2{margin:0 0 14px;}
+.lead{font-size:18px;margin:8px 0 0;}
+.project-card{
+  background:linear-gradient(135deg, var(--panel), var(--panel2));
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:var(--radius);
+  padding:22px;
+  box-shadow:var(--shadow);
+}
+.stats-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:16px 0;}
+.card{background:rgba(0,0,0,.15);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:16px;}
+.stat{text-align:center;}
+.stat__value{font-size:28px;font-weight:800;}
+.stat__label{color:var(--muted);font-size:13px;}
+.pill-bar{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px;}
+.chip{padding:6px 10px;border-radius:20px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);font-weight:600;font-size:13px;}
+.feature-list{display:grid;gap:10px;padding-left:18px;}
+.flows-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;}
+.stack{display:flex;flex-wrap:wrap;gap:10px;}
+.screens{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));}
+.screen-placeholder{min-height:160px;border-radius:12px;border:2px dashed rgba(255,255,255,.2);display:grid;place-items:center;color:var(--muted);}
+.site-footer{border-top:1px solid rgba(255,255,255,.08);padding:24px 0;text-align:center;color:var(--muted);}
+.muted{color:var(--muted);font-size:13px;margin:6px 0 0;}
